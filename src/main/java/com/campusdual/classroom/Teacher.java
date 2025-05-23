@@ -8,4 +8,12 @@ public class Teacher extends Person {
 		super(name, surname);
 		this.area = area;
 	}
+
+	@Override
+	public void getDetails() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Área: ").append(area);
+		super.getDetails();
+		System.out.println(sb);
+	}
 }

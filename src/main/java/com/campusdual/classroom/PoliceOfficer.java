@@ -8,4 +8,12 @@ public class PoliceOfficer extends Person {
 		super(name, surname);
 		this.squad = squad;
 	}
+
+	@Override
+	public void getDetails() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Comisaría: ").append(squad);
+		super.getDetails();
+		System.out.println(sb);
+	}
 }
